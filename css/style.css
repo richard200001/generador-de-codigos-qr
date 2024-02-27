@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin-bottom: -50px;
+  background-color: #000000;
+}
+body #particles-js {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000000;
+}
+body .contenedor {
+  height: 260px;
+  transition: height 0.2s ease;
+  max-width: 450px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 16px 25px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: px solid rgba(255, 255, 255, 0.5);
+  border-left: px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-transition: height 0.2s ease;
+  -moz-transition: height 0.2s ease;
+  -ms-transition: height 0.2s ease;
+  -o-transition: height 0.2s ease;
+}
+body .contenedor header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+body .contenedor header h1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+body .contenedor header p {
+  font-size: 16px;
+}
+body .contenedor .form {
+  margin: 20px 0 25px;
+}
+body .contenedor .form input {
+  font-size: 18px;
+  padding: 0 17px;
+  height: 45px;
+}
+body .contenedor .form button {
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #1a2427 0%, #181c20 51%, #040405 100%);
+  background-size: 200% auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+body .contenedor .form button:hover {
+  background-position: right;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+body .contenedor .qr_code {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 23px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+}
+body .contenedor .qr_code #descargar {
+  width: 35%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 8px !important;
+  margin-top: 12px !important;
+  margin: 0;
+  color: #fff;
+  background: rgb(69, 69, 69);
+}
+body .contenedor .qr_code #descargar:hover {
+  color: rgb(0, 0, 0);
+  background: #fff;
+}
+body .contenedor.active {
+  height: 550px;
+}
+body .contenedor.active .qr_code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease-in-out;
+  -webkit-transition: opacity 0.5s 0.05s e;
+  -moz-transition: opacity 0.5s 0.05s e;
+  -ms-transition: opacity 0.5s 0.05s e;
+  -o-transition: opacity 0.5s 0.05s e;
+}
+
+
+@media only screen and (max-width: 508px) { 
+  body #particles-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+    margin: 0;
+    height: 800px;
+  }
+    
+ }
+ @media only screen and (min-width: 508px) { 
+  body #particles-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background: #000000;
+  }
+ }

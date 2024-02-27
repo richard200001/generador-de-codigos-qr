@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"> 
+  
+    
+    <div class="contenedor">
+        <header>
+            <h1>Generador de Código QR</h1>
+            <p>Pegue la URL para generar el código QR</p>
+        </header>
+        <div class="form">
+            <input type="text" class="form-control" placeholder="Ingrese la URL">
+            <button class="btn btn-primary">Generar Código QR</button>
+        </div>
+        <div class="qr_code">
+            <img src="images/codigo qr.png" alt="">
+            <button class="btn fas fa-arrow-down" id="descargar"></button>
+        </div>
+    </div>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/qr.js"></script>
+    <script src="js/filesaver.js"></script>
+
+</body>
+</html>
